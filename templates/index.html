@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <style>
+        a:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    {% for item in data.list %}
+    <a href="{{ item[2] }}">{{ item[0] }} IP: {{ item[1] }}</a>
+    </br>
+    {% endfor %}
+</body>
+
+</html>
